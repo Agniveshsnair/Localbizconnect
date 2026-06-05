@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Practice - LocalBiz Connect</title>
+    <link rel="stylesheet" href="finalstyle.css">
+</head>
+<body>
+
+<header class="topbar">
+    <div class="logo"><img src="logopic.png" alt="logo"></div>
+
+    <nav>
+        <a href="index.html" style="color:aliceblue; text-decoration: none;">Home</a>
+            <a href="dashboard.html" style="color:aliceblue; text-decoration: none;">Dashboard</a>
+            <a href="About-us.html" style="color:aliceblue; text-decoration: none;">About Us</a>
+            <a href="Services.html" style="color:aliceblue; text-decoration: none;">Services</a>  
+            <a href="Contactus.html" style="color:aliceblue; text-decoration: none;">Contact Us</a>
+            <a href="student-details.html" style="color:aliceblue; text-decoration: none;">Student details</a>  
+            <a href="student-profile.html" style="color:aliceblue; text-decoration: none;">Student portal</a>      
+    </nav>
+</header>
+
+<section class="page-title">
+    <h1>Contact Us</h1>
+    <p>Send a service enquiry. Later this form will connect to backend and database.</p>
+</section>
+
+<section class="form-box">
+
+    <form onsubmit="submitEnquiry(event);">
+
+    <div class="name">
+        <label for="studentName">Student Name</label>
+        <input id="studentName" type="text" placeholder="Enter your name">
+    </div>
+    <div class="email">  
+        <label for="studentEmail">Email Address</label>
+        <input id="studentEmail" type="email" placeholder="Enter your email">
+    </div>
+    <div class="service">
+        <label for="service">Select Interested Service</label>
+        <select id="service">
+            <option value="">Select a service</option>
+            <option>Website Design</option>
+            <option>App Development</option>
+            <option>Digital Marketing</option>
+            <option>IT Support</option>
+        </select>
+    </div>
+    <div class="message">
+        <label for="message">Enter your message</label>
+        <textarea id="message" placeholder="Enter Your Message  "></textarea>
+    </div>
+    <button type="submit" class="primary-btn">Submit Enquiry</button>
+    <p id="formMessage"></p>
+    </form>
+
+</section>
+
+<footer>
+    <p>Form Practice Page - LocalBiz Connect</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
