@@ -17,7 +17,7 @@ def css_files(filename):
 def js_files(filename):
     return send_from_directory('.', f'{filename}.js')
 
-# Images 
+# KIRAN MONKEY
 @app.route('/<path:filename>.png')
 def png_files(filename):
     return send_from_directory('.', f'{filename}.png')
